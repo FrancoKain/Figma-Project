@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <title>4 en linea</title>
+</head>
+<body>
+
+  <header class="header">
+    <nav>
+      <a class="hamburger" href="#">
+        <div class="round-btn" id="ham-btn">
+          <div class="hamburger-icon">
+            <div id="firstLine"></div>
+            <div id="secondLine"></div>
+            <div id="thirdLine"></div>
+
+          </div>
+        </div>
+      </a>
+      <a href="index.html">
+        <div class="logo">
+          <img src="img/nasa-6-logo-svgrepo-com.svg" alt="" />
+        </div>
+      </a>
+      <div class="round-btn" id="profile-btn">
+        <img class="icon-white" src="img/profile.svg" alt="" />
+      </div>
+    </nav>
+
+    <nav class="hamburguer-menu">
+      <h1>Menu</h1>
+      <ul class="buscar">
+        <li>
+            <form action="">
+              <input placeholder="Buscar..." class="search" type="text" />
+            </form>
+          </li>
+      </ul>
+      <ul class="categorias">
+          <li class="categoria">
+            <a href="">
+              <img src="" alt="" />
+              <h2>Categorias</h2>
+            </a>
+          </li>
+          <li class="categoria">
+            <a href="">
+              <img src="" alt="" />
+              <h2>Tendencias</h2>
+            </a>
+          </li>
+          <li class="categoria">
+            <a href="">
+              <img src="" alt="" />
+              <h2>Mas jugados</h2>
+            </a>
+          </li>
+          <li class="categoria"> 
+            <a href="">
+              <img src="" alt="" />
+              <h2>Recientes</h2>
+            </a>
+          </li>
+        </div>
+      </ul>
+      <ul class="redes">
+        <li class="red round-btn">
+          <img class="icon-white" src="img/youtube-svgrepo-com.svg" alt="" />
+        </li>
+        <li class="red round-btn">
+          <img
+            class="icon-white"
+            src="img/instagram-svgrepo-com (1).svg"
+            alt=""
+          />
+        </li>
+        <li class="red round-btn">
+          <img class="icon-white" src="img/facebook-svgrepo-com.svg" alt="" />
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="profile-menu">
+      <a href="#">
+        <img src="img/cross-svgrepo-com.svg" id="rightCross" class="cross icon-white" alt="" />
+      </a>
+      <div class="profile-section">
+        <div class="round-btn profile-pic">
+          <img src="img/profile.svg" alt="" class="icon-white" />
+        </div>
+        <div class="user">
+          <h2>Nombre de usuario</h2>
+
+          <a href="#">
+            <p>Administrar perfil</p>
+          </a>
+        </div>
+      </div>
+      <ul>
+        <a href="#">
+          <li>
+            <img class="icon-white" src="img/profile.svg" alt="" />
+            <h2>Mi perfil</h2>
+          </li>
+        </a>
+        <a href="#">
+          <li>
+            <img class="icon-white" src="img/medal-svgrepo-com.svg" alt="" />
+            <h2>Logros</h2>
+          </li>
+        </a>
+        <a href="#">
+          <li>
+            <img class="icon-white" src="img/group-svgrepo-com.svg" alt="" />
+            <h2>Amigos</h2>
+          </li>
+        </a>
+        <a href="#">
+          <li>
+            <img class="icon-white" src="img/cart-4-svgrepo-com.svg" alt="" />
+            <h2>Carrito</h2>
+          </li>
+        </a>
+      </ul>
+
+      <div class="close-session">
+        <a href="#">
+          <img src="" alt="" />
+          <h2>Cerrar sesion</h2>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  
+    <main class="main">
+
+      <div class="breadcrumbs">
+        <a href="index.html"><h1>Inicio</a>/Videojuego</h1>
+      </div>
+      
+      <section class="game">
+            <div class="title">
+                <p>4 en linea: Avengers vs Thanos</p>
+                
+
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <img src="img/info-svgrepo-com.svg" alt="" class="info icon-white">
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <img src="img/share-svgrepo-com.svg" alt="" class="share icon-white">
+                  </a>
+    
+            </div>
+            
+            <div class="display">
+              <select name="" id="modoJuego">
+                <option value="1">4 en linea</option>
+                <option value="2">5 en linea</option>
+                <option value="3">6 en linea</option>
+              </select>
+              <select name="" id="fichasImg">
+                <option value="1">Thanos vs Spiderman</option>
+                <option value="2">IronMan vs Ultron</option>
+                <option value="3">Thor vs Loki</option>
+              </select>
+              <button id="jugar">¡Jugar!</button>
+            </div>
+
+            <div class="restart hidden">
+              <button id="reiniciar">Reiniciar</button>
+              <h2 id="minutestxt"></h2>
+              <h2>:</h2>
+              <h2 id="secondstxt"></h2>
+            </div>
+            <div class="game-img">
+              <canvas width="1200" height="800"></canvas>
+            </div>
+          <article class="instructions">
+              <div class="description">
+                <div>
+                  <h3>¿Cómo jugar?</h3>
+                    <p>¡El primero en realizar una linea de 4 fichas gana! Pero cuidado, ¡tu contrincante puede bloquearte! En esta nueva versión, ¡lucharas contra Thanos! Ten cuidado vaquero
+                    </p>
+                </div>
+              </div>
+                <article class="examples">
+                  <h3>Jugadas ganadoras</h3>
+                  <div>
+                    <img src="img/ejemplo1.jpeg" alt="">
+                    <img src="img/ejemplo2.jpeg" alt="">
+                    <img src="img/ejemplo3.jpeg" alt="">
+                  </div>
+
+                </article>
+            </article>
+        </section>
+
+        <h2>Multimedia</h2>
+        <section class="carrousel-spiderman">
+          <div class="cards-spiderman">
+              <div class="card-spiderman">
+                <div class="play-button"></div>
+                <img src="img/spiderman/Web_of_Spider-Man_Vol_1_129.1_Sin_texto.webp" alt="img carrusel">
+              </div>
+              <div class="card-spiderman">
+                <div class="play-button"></div>
+                <img src="img/spiderman/destino-de-‘Spider-Man’-en-los-Comics.jpg" alt="img carrusel">
+              </div>
+              <div class="card-spiderman">
+                <img src="img/spiderman/D_NQ_NP_967161-MLU45333057350_032021-V.jpg" alt="img carrusel">
+              </div>
+              <div class="card-spiderman">
+                <img src="img/spiderman/D_NQ_NP_760263-MLA50820321168_072022-O.webp" alt="img carrusel">
+              </div>
+              <div class="card-spiderman">
+                <img src="img/spiderman/asm-10-martin_beyondamazing_1.jpg" alt="img carrusel">
+              </div>
+              <div class="card-spiderman">
+                <img src="img/spiderman/00spiderman-Fantasy1000-mobileMasterAt3x.jpg" alt="img carrusel">
+              </div>
+              <div class="card-spiderman">
+                <img src="img/spiderman/00spiderman-310-articleLarge.webp" alt="img carrusel">
+              </div>     
+          </div>
+        </section>
+   
+          
+
+          <section class="seccion-comentarios">
+            <h3>Seccion de comentarios</h3>
+            <div class="caja-comentario">
+                <div class="profile-picture" >
+                  <img src="img/profile.svg" alt="" class="icon-white" >
+                </div>
+                <div class="textarea">
+
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Deja tu comentario..."></textarea>
+                    
+                    <div class="comment-buttons">
+                        <button type="submit" class="submit-btn">Enviar</button>
+                        <button>Cancelar</button>
+                    </div>
+                  </div>
+
+
+            </div>
+
+            <ul>
+              <li class="comentario">
+                <img src="img/profile.svg" alt="" class="icon-white">
+                <p>La verdad es que este juego es malisimo, Cristian no aprueba</p>
+              
+              </li>
+              <li class="comentario">
+                <img src="img/profile.svg" alt="" class="icon-white">
+                <p>Este juego me cambió la vida. Desde que lo jugué, gano en dolares. Fabri aprueba</p>
+              </li>
+              <li class="comentario">
+                <img src="img/profile.svg" alt="" class="icon-white">
+                <p>Que vuelva la colimba, Carlos</p>
+              </li>
+            </ul>
+          </section>
+          
+          <article class="foro">
+            <h3>¿Estas atascado? ¡Visita nuestro <a href="">foro</a>!</h3>
+          </article>
+
+    </main>
+
+    <footer class="footer">
+
+      
+
+      <div>
+        <p class="footer-text">
+          ¡Olvídate del aburrimiento con NasaGames! La mayor selección de juegos
+          está aquí, para que lleves la diversión al siguiente nivel. Juega
+          online y sin preocupaciones: puedes jugar a todos nuestros juegos sin
+          descargar. ¡Pero cuidado! Nuestros juegos de acción solo son aptos
+          para los más atrevidos; competirás con grandes pilotos en nuestros
+          juegos de carreras; y sólo los auténticos exploradores llegarán a su
+          meta en los juegos de aventura. Y para los clásicos, las versiones
+          clásicas y no tan clásicas de los clásicos juegos de mesa. ¡Esperamos
+          que lo disfrutes!
+        </p>
+
+        <nav class="about-us icon-white">
+          <a href=""><img src="img/code-svgrepo-com.svg" alt="" class=""/><p>Diseñadores</p></a>
+          <a href=""><img src="img/cookie-svgrepo-com.svg" alt="" /><p>Cookies</p></a>
+          <a href=""><img src="img/help-svgrepo-com (1).svg" alt="" /><p>Ayuda</p></a>
+          <a href=""><img src="img/lock-svgrepo-com (1).svg" alt="" /><p>Seguridad</p> </a>
+        </nav>
+      </div>
+
+      <div class="aside-footer">
+        <img src="img/nasa-6-logo-svgrepo-com.svg" alt="" />
+        <nav>
+          <a href=""><img class="icon-white" src="img/instagram-svgrepo-com (1).svg" alt="" /></a>
+          <a href=""><img class="icon-white" src="img/facebook-svgrepo-com.svg" alt="" /></a>
+          <a href=""><img class="icon-white" src="img/youtube-svgrepo-com.svg" alt="" /></a>
+        </nav>
+      </div>
+    </footer>
+    
+</body>
+<script type="text/javascript" src="js/menus.js"></script>
+<script type="text/javascript" src="js/Tablero.js"></script>
+<script type="text/javascript" src="js/Casillero.js"></script>
+<script type="text/javascript" src="js/Ficha.js"></script>
+<script type="text/javascript" src="js/Jugador.js"></script>
+<script type="text/javascript" src="js/Drop.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+
+</html>
